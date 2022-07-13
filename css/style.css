@@ -180,9 +180,9 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 .contents {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   min-height: 600px;
-  padding: 20px;
+  /* padding: 20px; */
   margin: auto;
 }
 
@@ -417,4 +417,23 @@ profileページ
 .swiper-slide:nth-child(3n + 3) {
   /*3、6、9、3n+3枚目の背景色 */
   background-color: #53c638;
+}
+
+
+.square_slide li{
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.square_slide li a
+{
+  height: 100%;
+  width: 100%;
+}
+
+.square_slide li img{
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
 }
