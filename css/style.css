@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  color: #181818;
   letter-spacing: 0.05em;
 }
 
@@ -79,21 +79,15 @@ header a {
 }
 
 header .inner {
-  background-color: #fff;
+  
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
+  
   margin: 20px;
 }
 
-/* ロゴ */
-#header_logo img {
-  display: block;
-  width: 100px;
-}
 
 /* メニュー */
 #global_menu {
@@ -105,6 +99,7 @@ header .inner {
 
 
 #global_menu a {
+  left: 800px;
   padding: 0px 13px;
   line-height: 1;
   position: relative;
@@ -116,7 +111,7 @@ header .inner {
 
 #global_menu li.current::before {
   content: "";
-  bottom: 2px;
+  bottom: 100px;
   position: absolute;
   width: 100%;
   height: 10px;
@@ -178,36 +173,58 @@ footer {
 ======================================================*/
 
 body.contents_page {/* classにcontents_pageが指定されているbodyタグ */
-  padding-top: 100px;
+  padding-top: 180px;
 }
-
+h2 {
+  font-size: 40px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
 .sec{
   margin-bottom: 40px;
 }
 
 .contents {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   min-height: 600px;
-  padding: 20px;
+  /* padding: 20px; */
   margin: auto;
+}
+
+.Hibiki {
+  margin-top: 100px;
+  margin-left: 850px;
+}
+
+.photo {
+  margin-top: -450px;
+  margin-left: 170px;
 }
 
 /* =================================================
 トップページ
 ================================================= */
 .top_eye_catch {
-  height: 500px;
+  font-size: 30px;
+  letter-spacing: 15px;
+  height: 1000px;
   color: #fff;
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
+  background-image: url(../images/IMG_8420.JPG);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
-  background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
   
   /* 上下左右中央テクニック https://ics.media/entry/17522/ */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h4 {
+  font-size: 13px;
+  letter-spacing: 4px;
+  line-height: 36px;
+  padding-top: 10px;
 }
 
 .link_menu{
@@ -394,4 +411,53 @@ profileページ
 ======================================================*/
 .mb_m {
   margin-bottom: 20px;
+}
+
+.swiper--wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 100px;
+}
+
+.swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  color: #4e22bd;
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.swiper-slide:nth-child(3n + 1) {
+  /*1、4、7、3n+1枚目の背景色 */
+  background-color: #562926;
+}
+
+.swiper-slide:nth-child(3n + 2) {
+  /*2、5、8、3n+2枚目の背景色 */
+  background-color: #746510;
+}
+
+.swiper-slide:nth-child(3n + 3) {
+  /*3、6、9、3n+3枚目の背景色 */
+  background-color: #53c638;
+}
+
+
+.square_slide li{
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.square_slide li a
+{
+  height: 100%;
+  width: 100%;
+}
+
+.square_slide li img{
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
 }

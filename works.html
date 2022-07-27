@@ -27,60 +27,94 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- cdnからslick読み込み https://kenwheeler.github.io/slick/-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js"></script>
-    <title>リストページ</title>
+    <script src="./js/slide.js"></script>
+    <title>portfolio</title>
   </head>
   <body class="contents_page">
     <header>
       <div class="inner">
         <div id="menu_btn"></div>
-        <p id="header_logo">
-          <a href="./index.html"><img src="./images/logo.svg" alt="" /></a>
-        </p>
+        
         <ul id="global_menu">
-          <li><a href="./profile.html">profile</a></li>
-          <li class="current"><a href="./works.html">works</a></li>
-          <li><a href="./slide.html">slide</a></li>
-          <li><a href="./report.html">report</a></li>
+          <li class="current"><a href="./profile.html">about</a></li>
+          <li><a href="./works.html">portfolio</a></li>
+          <li><a href="./index.html">Hibiki Morita</a></li>
         </ul>
+
       </div>
     </header>
 
     <section>
-      <div class="report_eye_catch">works</div>
       <div class="contents">
-        <h2>WORKS</h2>
-        <ul class="thumb_list">
+        <h2>2021</h2>
+        
+        <ul class="slide square_slide">
+          
           <li>
-            <a href="./images/toy01.jpg" data-lity
-              ><img src="./images/toy01.jpg" alt="サムネイル"
+            <a href="./images/IMG_8420.JPG" data-lity
+              ><img src="./images/IMG_8420.JPG" alt="サムネイル"
+            /></a>
+          </li>
+          
+          <li>
+            <a href="./images/DSC00614.jpg" data-lity
+              ><img src="./images/DSC00614.jpg" alt="サムネイル"
             /></a>
           </li>
           <li>
-            <a href="./images/toy02.jpg" data-lity
-              ><img src="./images/toy02.jpg" alt="サムネイル"
+            <a href="./images/IMG_0253.jpg" data-lity
+              ><img src="./images/IMG_0253.jpg" alt="サムネイル"
             /></a>
           </li>
           <li>
-            <a href="./images/toy03.jpg" data-lity
-              ><img src="./images/toy03.jpg" alt="サムネイル"
+            <a href="./images/DSC08911111.jpg" data-lity
+              ><img src="./images/DSC08911111.jpg" alt="サムネイル"
             /></a>
           </li>
           <li>
-            <a href="./images/toy04.jpg" data-lity
-              ><img src="./images/toy04.jpg" alt="サムネイル"
+            <a href="./images/IMG_9698.jpg" data-lity
+              ><img src="./images/IMG_9698.jpg" alt="サムネイル"
             /></a>
           </li>
           <li>
-            <a href="./images/toy03.jpg" data-lity
-              ><img src="./images/toy03.jpg" alt="サムネイル"
+            <a href="./images/DSC00392.JPG" data-lity
+              ><img src="./images/DSC00392.JPG" alt="サムネイル"
+            /></a>
+          </li>
+          <li>
+            <a href="./images/DSC01116.JPG" data-lity
+              ><img src="./images/DSC01116.JPG" alt="サムネイル"
             /></a>
           </li>
         </ul>
+
+
       </div>
     </section>
 
-    <footer>名前など</footer>
   </body>
 </html>
